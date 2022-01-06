@@ -24,7 +24,6 @@ var countPoints = function (rings) {
     }
     ringCheck[rodNum][color] = true;
   }
-  let res = ringCheck[6].every(Boolean);
   ringCheck.forEach(function (e) {
     if (e.every(Boolean)) {
       ans++;
